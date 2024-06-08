@@ -41,10 +41,10 @@ nav ul li a {
 .center-img {
     display: block;
     margin: 0 auto;
-    border-radius: 50%; /* Hace que los bordes sean ovalados */
-    width: 250px; /* Ajusta el tamaño según sea necesario */
-    height: 250px; /* Asegura que la imagen se mantenga cuadrada para un borde circular */
-    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+    border-radius: 50%; 
+    width: 250px; /
+    height: 250px; 
+    object-fit: cover; 
 }
 
 
