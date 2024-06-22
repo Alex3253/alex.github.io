@@ -96,10 +96,10 @@ label{
     transition: top 0.3s, font-size 0.3s, color 0.3s;
 }
 
-input:focus + label,
-input:valid + label{
+input:focus + label,  /*Aplica los estilos al label que sigue a un input cuando el input está enfocado (cuando se hace clic en el campo de entrada o se selecciona).*/
+input:valid + label{  /*Aplica los estilos al label que sigue a un input cuando el input es válido (cumple con las condiciones de validación, como un formato de correo electrónico correcto).*/
     top: 0;
-    font-size: 12px;
+    font-size: 12px;  /* se utiliza para especificar el tamaño de la fuente del texto. La sintaxis es:*/
     color: #4285f4;
 }
 
