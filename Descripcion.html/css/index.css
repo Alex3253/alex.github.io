@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: white; 
+    margin: 0; 
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: column; /* Alineación de columna para los elementos hijos */
+    align-items: center; /* Centra horizontalmente los elementos hijos */
+}
+
+
+
+header {
+    background-color: white; 
+    padding: 20px 0; 
+    width: 100%; 
+    text-align: center;
+}
+
+
+
+.header-content {
+    display: flex; /* Usa flexbox para el diseño del contenido del encabezado */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0; 
+}
+
+
+.logo {
+    margin-right: 20px; /* Margen derecho de 20px para el logo */
+}
+
+.search-container {
+    display: flex; /* Usa flexbox para el diseño del contenedor de búsqueda */
+    align-items: center; 
+}
+
+.search-container input[type="search"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; /* Borde sólido de 1px con color gris claro */
+    border-left: none; /* Sin borde a la izquierda */
+    border-radius: 0 4px 4px 0; /* Radio de borde para redondear las esquinas derechas */
+    background-color: #4CAF50; 
+    color: white; 
+    cursor: pointer; /* Cursor apuntador */
+}
+
+.search-container button:hover {
+    background-color: #45a049; /* Cambia el color de fondo del botón al pasar el mouse */
+}
+
+
+
+header nav {
+    background-color: #333; /* Color de fondo del área de navegación del encabezado */
+    padding: 2px; 
+}
+
+main{
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 100px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;   
+}
+
+nav ul li a:hover {
+    background-color: #555; 
+    border-radius: 5px; /* Radio de borde de 5px para redondear las esquinas */
+}
+
+.inline {
+    display: flex; /* Utiliza el diseño flexible para alinear elementos en línea */
+}
+
+
+.container{
+    border: 2px black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 460px;
+    margin-left: 40px;
+    margin-top: 20px;
+    bottom: 500px;
+    box-shadow: 20px 2px 8px rgb(0, 0, 0, 0.1);  
+}
+
+
+.price {
+    font-size: 20px; /* Tamaño de fuente de 20px */
+    color: #e67e22; /* Color del texto naranja */
+}
+
+
+.buy-button {
+    display: inline-block; /* Mostrar como bloque en línea */
+    padding: 1rem 2rem; /* Relleno interior de 1rem arriba/abajo y 2rem a los lados */
+    font-size: 1rem; /* Tamaño de fuente de 1rem */
+    color: #fff; 
+    background-color: #e67e22; 
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Radio de borde de 5px para esquinas redondeadas */
+    cursor: pointer; /* Cursor apuntador */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+
+.buy-button:hover {
+    background-color: #d35400; /* Cambia el color de fondo del botón al pasar el mouse */
+}
+
+
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 10px 0; 
+    width: 100%; 
+    text-align: center; 
+    bottom: 0; 
+    position: fixed; /* Fija el pie de página en una posición fija en la pantalla */
+}
+
+
+

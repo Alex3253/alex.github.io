@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: white; 
+    margin: 0; 
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: column; /* Orientación de columna para organizar elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente en el cuerpo */
+}
+
+header {
+    background-color: white; 
+    padding: 10px 0; 
+    width: 100%; 
+    text-align: center; /* Alineación del texto centrado dentro del encabezado */
+}
+
+.header-content {
+    display: flex; /* Usa flexbox para el diseño */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0px; 
+}
+
+.logo {
+    margin-right: 20px; /* Margen derecho de 20px para separar el logo de otros elementos */
+}
+
+.search-container {
+    display: flex; /* Usa flexbox para el diseño */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.search-container input[type="search"] {
+    width: 300px; /* Ancho del input de búsqueda */
+    padding: 10px; 
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    border: 1px solid #ccc; /* Borde sólido de 1px con color gris claro (#ccc) */
+    border-radius: 4px 0 0 4px; /* Radio de borde: redondeo de 4px en la esquina superior izquierda y en la esquina inferior izquierda */
+    outline: none; /* Elimina el contorno predeterminado (focus outline) */
+}
+
+.search-container button {
+    padding: 10px 20px; /* Relleno interno de 10px arriba/abajo y 20px izquierda/derecha */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    border: 1px solid #ccc; /* Borde sólido de 1px con color gris claro (#ccc) */
+    border-left: none; /* Borde izquierdo ninguno */
+    border-radius: 0 4px 4px 0; /* Radio de borde: sin redondeo en la esquina superior izquierda, redondeo de 4px en la esquina inferior izquierda y derecha */
+    background-color: #4CAF50; 
+    color: white; 
+    cursor: pointer; /* Cambia el cursor a una mano cuando se coloca sobre el botón */
+}
+
+.search-container button:hover {
+    background-color: #45a049; /* Color de fondo cuando se hace hover sobre el botón */
+}
+
+
+
+header nav {
+    background-color: #333; 
+    padding: 2px; 
+}
+
+nav ul li {
+    display: inline; /* Hace que los elementos de la lista <li> se muestren en línea (en una sola línea) */
+    margin: 100px; 
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina la decoración de subrayado del texto del enlace */
+    color: white; 
+}
+
+nav ul li a:hover {
+    background-color: #555; 
+    border-radius: 5px; /* Radio de borde para suavizar las esquinas del fondo en hover */
+}
+
+
+
+.inline {
+    display: flex; /* Utiliza el modelo flexbox para el diseño */
+    max-width: 1400px; 
+    width: 100%; 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 8px; /* Bordes redondeados de 8px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra con desplazamiento 0 en horizontal, 4px en vertical, 8px de desenfoque, color negro con opacidad 0.1 */
+}
+
+.description {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; /* Bordes redondeados de 8px */
+    width: 150%; /* Ancho del elemento al 150% del ancho del contenedor padre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra con desplazamiento 0 en horizontal, 4px en vertical, 8px de desenfoque, color negro con opacidad 0.1 */
+}
+
+.nosotros-container {
+    flex: 3; /* Establece el tamaño flexible del contenedor */
+    margin-right: 20px; /* Margen derecho de 20px */
+    margin-left: 30px; /* Margen izquierdo de 30px */
+}
+
+
+
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 10px 0; 
+    width: 100%; 
+    text-align: center; 
+    bottom: 0; 
+    position: fixed; /* Fija el footer en una posición fija en la pantalla */
+}
