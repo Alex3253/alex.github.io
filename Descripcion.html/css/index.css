@@ -23,7 +23,7 @@ header{
 }
 
 .logo {
-    margin-right: 20px;
+    margin-right: 20px;  /*es una declaración que se aplica a un elemento para establecer un margen (espacio) en el lado derecho del elemento.*/
 }
 
 
@@ -31,7 +31,7 @@ header{
     display: flex;
     align-items: center;
 }
-
+/*Esto indica que los estilos definidos a continuación se aplicarán a cualquier elemento <input> de tipo "search" que esté dentro de un elemento que tenga la clase "search-container".*/
 .search-container input[type="search"] {
     width: 300px;
     padding: 10px;
@@ -40,7 +40,7 @@ header{
     border-radius: 4px 0 0 4px;
     outline: none;
 }
-
+/*Esto indica que los estilos definidos a continuación se aplicarán a cualquier elemento <button> que esté dentro de un elemento que tenga la clase "search-container".*/
 .search-container button {
     padding: 10px 20px;
     font-size: 16px;
@@ -106,11 +106,11 @@ nav ul li a:hover {
     font-size: 20px;
     color: #e67e22;
 }
-
+/*Esto indica que los estilos definidos a continuación se aplicarán a cualquier elemento que tenga la clase "buy-button".*/
 .buy-button {
-    display: inline-block;
+    display: inline-block;  /*Hace que el elemento se muestre como un bloque en línea, significa que ocupará solo el ancho necesario para mostrar su contenido, pero permitirá que otros elementos se muestren en la misma línea.*/
     padding: 1rem 2rem;
-    font-size: 1rem;
+    font-size: 1rem;  /*significa que estás estableciendo el tamaño de la fuente del elemento en 1 rem. */
     color: #fff;
     background-color: #e67e22;
     border: none;
