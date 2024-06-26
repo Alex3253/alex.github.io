@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h1{
+    color: #333;
+}
+
+div{
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #2b5ece;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
