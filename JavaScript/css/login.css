@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usar flexbox para centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    background-color: #f0f0f0; /* Color de fondo */
+}
+
+.login-container {
+    display: flex; /* Usar flexbox para el diseño interno */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    width: 100%; /* Ancho completo */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+    text-align: center; /* Alineación del texto centrada */
+}
+
+.logo {
+    width: 100px; /* Ancho del logo */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
+
+h2 {
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    color: #333;
+}
+
+.input-group {
+    position: relative; /* Posición relativa para elementos hijos posicionados absolutamente */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
+
+input {
+    width: 100%; /* Ancho completo del campo de entrada */
+    padding: 10px 0; /* Relleno interior */
+    border: none; /* Sin borde */
+    border-bottom: 2px solid #ccc; /* Borde inferior de 2px sólido con color gris claro */
+    outline: none; /* Sin contorno al enfocar */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: border-color 0.3s; /* Transición suave del color del borde */
+}
+
+input:focus {
+    border-bottom: 2px solid #4285f4; /* Cambia el color del borde inferior al enfocar */
+}
+
+label {
+    position: absolute; /* Posición absoluta */
+    top: 12px; /* Desde la parte superior */
+    left: 0; /* Desde la esquina izquierda */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #999;
+    transition: top 0.3s, font-size 0.3s, color 0.3s; /* Transiciones suaves para animaciones */
+}
+
+input:focus + label,
+input:valid + label {
+    top: -12px; /* Mueve la etiqueta hacia arriba cuando se enfoca o cuando el campo está lleno */
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+    color: #4285f4; /* Color azul cuando se enfoca o cuando el campo está lleno */
+}
+
+button {
+    width: 100%; /* Ancho completo del botón */
+    padding: 10px; /* Relleno interior de 10px */
+    background-color: #4285f4;
+    color: #fff;
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Radio de borde */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor apuntador */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+button:hover {
+    background-color: #357ae8; /* Cambia el color de fondo del botón al pasar el mouse */
+}
+
+.additional-options {
+    margin-top: 20px; /* Margen superior de 20px */
+}
+
+.additional-options a {
+    color: #4285f4; /* Color del texto del enlace */
+    text-decoration: none; /* Sin decoración de subrayado */
+    font-size: 14px; /* Tamaño de fuente */
+    display: block; /* Mostrar como bloque para ocupar el ancho completo disponible */
+    margin-bottom: 10px; /* Margen inferior de 10px */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.additional-options a:hover {
+    color: #357ae8; /* Cambia el color del texto del enlace al pasar el mouse */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed; /* Fija el pie de página en la parte inferior de la ventana */
+    bottom: 0; /* Alinea el pie de página en la parte inferior */
+}
