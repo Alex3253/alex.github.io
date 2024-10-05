@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const cuerpoTabla = document.getElementById("cuerpoTabla");
     const buscarCodigoInput = document.getElementById("buscar-codigo");
     const buscarGradoInput = document.getElementById("buscar-grado");
+    const buscarCodigoBtn = document.getElementById("btn-codigo");  
+    const buscarGradoBtn = document.getElementById("btn-grado");  
     let editIndex = null;
   
     formulario.addEventListener("submit", (event) => {
@@ -11,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const codigo = document.getElementById("codigo").value;
         const nombre = document.getElementById("nombre").value;
         const grado = document.getElementById("grado").value;
-
-        
+  
         if (!codigo || !nombre || !grado) {
             alert("Por favor, complete todos los campos.");
             return;
@@ -58,17 +59,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
   
-    // Funcion para buscar por codigo y grado
-    buscarCodigoInput.addEventListener("input", buscarRegistros);
-    buscarGradoInput.addEventListener("input", buscarRegistros);
-  
-    function buscarRegistros() {
-        const codigoFiltro = buscarCodigoInput.value.toLowerCase();
-        const gradoFiltro = buscarGradoInput.value.toLowerCase();
+    // Función para buscar por código
+    buscarCodigoBtn.addEventListener("click", () => {
+        const codigoFiltro = buscarCodigoInput.value;
         Array.from(cuerpoTabla.children).forEach((fila) => {
-            const codigoTexto = fila.children[0].textContent.toLowerCase();
-            const gradoTexto = fila.children[2].textContent.toLowerCase();
-            fila.style.display = (codigoTexto.includes(codigoFiltro) || gradoTexto.includes(gradoFiltro)) ? "" : "none";
+            const codigoTexto = fila.children[0].textContent;
+            fila.style.display = codigoTexto.includes(codigoFiltro) ? "" : "none";
         });
-    }
+    });
+  
+    // Función para buscar por grado
+    buscarGradoBtn.addEventListener("click", () => {
+        const gradoFiltro = buscarGradoInput.value;
+        Array.from(cuerpoTabla.children).forEach((fila) => {
+            const gradoTexto = fila.children[2].textContent;
+            fila.style.display = gradoTexto.includes(gradoFiltro) ? "" : "none";
+        });
+    });
 });

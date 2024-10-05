@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro de Matrícula</title>
     <link rel="stylesheet" href="css/estilos.css" />
-  </head>
-  <body>
+</head>
+<body>
     <h1>Registro de Matrícula</h1>
     <form id="formulario">
-      <label for="codigo">Código del estudiante:</label>
-      <input type="text" id="codigo" name="codigo" /><br /><br />
-      <label for="nombre">Nombre del estudiante:</label>
-      <input type="text" id="nombre" name="nombre" /><br /><br />
-      <label for="grado">Grado del estudiante:</label>
-      <input
-        type="text"
-        id="grado"
-        name="grado"
-      /><br /><br />
-      <button id="agregar">Agregar</button>
+        <label for="codigo">Código del estudiante:</label>
+        <input type="text" id="codigo" name="codigo" /><br /><br />
+        <label for="nombre">Nombre del estudiante:</label>
+        <input type="text" id="nombre" name="nombre" /><br /><br />
+        <label for="grado">Grado del estudiante:</label>
+        <input type="text" id="grado" name="grado" /><br /><br />
+        <button type="submit">Agregar</button>
     </form>
-    <input type="text" id="buscar-codigo" placeholder="Buscar por código" /><br>
-    <input type="text" id="buscar-grado" placeholder="Buscar por grado" /><br>
-    <button id="buscar-btn">Buscar</button>
+    
+    <input type="text" id="buscar-codigo" placeholder="Buscar por código">
+    <button id="btn-codigo">Buscar</button><br>
+
+    <input type="text" id="buscar-grado" placeholder="Buscar por grado">
+    <button id="btn-grado">Buscar</button><br>
+
     <table id="tabla">
-      <thead>
-        <tr>
-          <th>Código</th>
-          <th>Nombre</th>
-          <th>Grado</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody id="cuerpoTabla"></tbody>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Grado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla"></tbody>
     </table>
 
-    <script src="js/pruebas.js"></script>
-  </body>
+    <script src="pruebas.js"></script>
+</body>
 </html>
